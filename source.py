@@ -46,6 +46,7 @@ def deactivate(path, proxy_line):
 
     file.close()
 
+
 def activate(path, proxy_line):
     with open(path, 'r+') as file:
         line = file.readlines()
