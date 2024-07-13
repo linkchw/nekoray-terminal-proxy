@@ -1,9 +1,9 @@
-import os
-import argparse
+# import os
+# import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', type=str, help='activate the nekoray proxy for terminal')
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# parser.add_argument('-i', type=str, help='activate the nekoray proxy for terminal')
+# args = parser.parse_args()
 
 
 def exists(path, proxy_line):
@@ -76,11 +76,14 @@ def main():
     file_path = "/etc/environment"
     proxy = "export http_proxy=\"http://127.0.0.1:2081/\""
     
-    if args.i == 'a' or args.i == 'activate':
+    user_input = input("[a] activate, [d] disable: ").trim().lower()
+    if user_input == 'a':
         activate(file_path, proxy)
 
-    elif args.i == 'd' or args.i == 'disable':
+    elif user_input == 'd':
         deactivate(file_path, proxy)
+    else: 
+        print('Not an option!')
 
 
 if __name__ == "__main__":
