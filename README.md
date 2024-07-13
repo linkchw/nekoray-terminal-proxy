@@ -4,6 +4,7 @@
 
 <h2>How To Use</h2>
 <h5>it's actullay simple</h5>
+<p>$ pip install argparse</p>
 <p>$ sudo python3 source.py -i <Options> (a [activate], d [disable])</p>
 
 <h3>Next</h3>
