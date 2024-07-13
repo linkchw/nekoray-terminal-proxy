@@ -76,7 +76,7 @@ def main():
     file_path = "/etc/environment"
     proxy = "export http_proxy=\"http://127.0.0.1:2081/\""
     
-    user_input = input("[a] activate, [d] disable: ").trim().lower()
+    user_input = input("[a] activate, [d] disable: ").strip().lower()
     if user_input == 'a':
         activate(file_path, proxy)
 
