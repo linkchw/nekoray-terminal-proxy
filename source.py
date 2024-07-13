@@ -2,14 +2,8 @@ import os
 import argparse
 
 parser = argparse.ArgumentParser()
-
 parser.add_argument('-i', type=str, help='activate the nekoray proxy for terminal')
-
 args = parser.parse_args()
-
-
-file_path = "/etc/environment"
-proxy = "export http_proxy=\"http://127.0.0.1:2081/\""
 
 
 def exists(path, proxy_line):
@@ -33,8 +27,6 @@ def deactivate(path, proxy_line):
         line = file.readlines()
         final_file = [i for i in line]
 
-        
-
         if exists(path, proxy_line): 
             for i in final_file:
                 if proxy_line in i:
@@ -52,15 +44,12 @@ def deactivate(path, proxy_line):
             file.seek(0)
             file.writelines(final_file)
 
-
     file.close()
 
 def activate(path, proxy_line):
     with open(path, 'r+') as file:
         line = file.readlines()
         final_file = [i for i in line]
-
-        
 
         if exists(path, proxy_line): 
             for i in final_file:
@@ -79,12 +68,13 @@ def activate(path, proxy_line):
             file.seek(0)
             file.writelines(final_file)
 
-
     file.close()
 
 
-
 def main():
+    file_path = "/etc/environment"
+    proxy = "export http_proxy=\"http://127.0.0.1:2081/\""
+    
     if args.i == 'a' or args.i == 'activate':
         activate(file_path, proxy)
 
