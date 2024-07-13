@@ -63,7 +63,7 @@ def activate(path, proxy_line):
             file.seek(0)
             file.writelines(final_file)
         else:
-            print("Proxy Config not found! active config added")
+            print("Proxy Config not found! activated config added")
             final_file.append(proxy_line)
             file.truncate(0)
             file.seek(0)
