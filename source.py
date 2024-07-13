@@ -31,7 +31,7 @@ def deactivate(path, proxy_line):
             for i in final_file:
                 if proxy_line in i:
                     del final_file[final_file.index(i)]
-                    final_file.append(f"\n#{proxy_line}")
+                    final_file.append(f"#{proxy_line}")
                     print("proxy has been DEACTIVATED successfully!")
 
             file.truncate(0)
@@ -64,7 +64,7 @@ def activate(path, proxy_line):
             file.writelines(final_file)
         else:
             print("Proxy Config not found! activated config added")
-            final_file.append(proxy_line)
+            final_file.append("\n" + proxy_line)
             file.truncate(0)
             file.seek(0)
             file.writelines(final_file)
