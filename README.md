@@ -1,5 +1,5 @@
 <h1>Nekoray Terminal Proxy</h1>
-<p>- this is for those who strugle with setting http proxy for terminal while using nekoray.</p> 
+<p>- this is for those who strugle with setting http proxy up/down for terminal while using nekoray.</p> 
 
 
 <h2>How To Use</h2>
