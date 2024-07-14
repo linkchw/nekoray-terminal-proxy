@@ -1,11 +1,3 @@
-# import os
-# import argparse
-
-# parser = argparse.ArgumentParser()
-# parser.add_argument('-i', type=str, help='activate the nekoray proxy for terminal')
-# args = parser.parse_args()
-
-
 def exists(path, proxy_line):
     with open(path, 'r') as file:
         line = file.readlines()
