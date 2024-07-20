@@ -3,13 +3,13 @@
 
 <h2>How To Use</h2>
 <h5>it's actually simple</h5>
-### Manual
 
 ```zsh
 sudo python3 source.py
 ```
 
 <h3>Next</h3>
+
 ```zsh
 source /etc/environment
 ```
