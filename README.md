@@ -3,7 +3,11 @@
 
 <h2>How To Use</h2>
 <h5>it's actually simple</h5>
-<p>$ sudo python3 source.py</p>
+```bash
+sudo python3 source.py
+```
 
 <h3>Next</h3>
-<p>$ source /etc/environment</p>
+```bash
+source /etc/environment
+```
