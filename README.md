@@ -3,6 +3,8 @@
 
 <h2>How To Use</h2>
 <h5>it's actually simple</h5>
+### Manual
+
 ```zsh
 sudo python3 source.py
 ```
