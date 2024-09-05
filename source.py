@@ -1,3 +1,4 @@
+# TODO: fix the exist fucntion 
 def exists(path, proxy_line):
     with open(path, 'r') as file:
         line = file.readlines()
