@@ -3,14 +3,18 @@
 
 <h2>How To Use</h2>
 <h5>it's actually simple</h5>
-
+<br/>
+<h5>you can set proxy using `/etc/environment` file</h5>
 ```bash
-sudo python3 source.py
+sudo python3 set_proxy.py
 ```
-
 <h3>Next</h3>
 
 ```bash
 source /etc/environment
 ```
-
+<br/>
+<h5>Or you can use .zshrc or .bashrc file</h5>
+```bash
+sudo python3 set_proxy.sh
+```
