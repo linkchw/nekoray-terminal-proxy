@@ -17,6 +17,7 @@ source /etc/environment
 <br/>
 
 <h5>Or you can use .zshrc or .bashrc file</h5>
+
 ```bash
 sudo python3 set_proxy.sh
 ```
