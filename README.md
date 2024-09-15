@@ -19,5 +19,5 @@ source /etc/environment
 <h3>Or you can use `.zshrc` or `.bashrc` file</h3>
 
 ```bash
-sudo python3 set_vpn.sh
+python3 set_vpn.sh
 ```
