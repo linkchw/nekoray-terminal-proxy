@@ -5,6 +5,7 @@
 <h5>it's actually simple</h5>
 <br/>
 <h5>you can set proxy using `/etc/environment` file</h5>
+
 ```bash
 sudo python3 set_proxy.py
 ```
@@ -14,6 +15,7 @@ sudo python3 set_proxy.py
 source /etc/environment
 ```
 <br/>
+
 <h5>Or you can use .zshrc or .bashrc file</h5>
 ```bash
 sudo python3 set_proxy.sh
