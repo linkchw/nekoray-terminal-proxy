@@ -1,18 +1,18 @@
 #!/bin/bash
 
 set_temp_proxy() {
-  export http_proxy=192.168.88.111:10809
+  export http_proxy=127.0.0.1:2081
   echo "Temporary proxy added."
 }
 
 set_perm_proxy() {
   echo "Adding proxy to .bashrc and .zshrc..."
   
-  echo "export http_proxy=192.168.88.111:10809" >> ~/.bashrc
+  echo "export http_proxy=127.0.0.1:2081" >> ~/.bashrc
   echo "Permanent proxy added to .bashrc."
   
   if [ -f ~/.zshrc ]; then
-    echo "export http_proxy=192.168.88.111:10809" >> ~/.zshrc
+    echo "export http_proxy=127.0.0.1:2081" >> ~/.zshrc
     echo "Permanent proxy added to .zshrc."
   else
     echo ".zshrc not found, skipping."
@@ -22,11 +22,11 @@ set_perm_proxy() {
   
   read -p "Do you want to remove the proxy lines from .bashrc and .zshrc? (y/n): " remove_choice
   if [[ $remove_choice == "y" ]]; then
-    sed -i '/export http_proxy=192.168.88.111:10809/d' ~/.bashrc
+    sed -i '/export http_proxy=127.0.0.1:2081/d' ~/.bashrc
     echo "Removed proxy from .bashrc."
     
     if [ -f ~/.zshrc ]; then
-      sed -i '/export http_proxy=192.168.88.111:10809/d' ~/.zshrc
+      sed -i '/export http_proxy=127.0.0.1:2081/d' ~/.zshrc
       echo "Removed proxy from .zshrc."
     fi
   fi
