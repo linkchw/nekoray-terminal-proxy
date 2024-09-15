@@ -3,7 +3,6 @@
 
 <h2>How To Use</h2>
 <h5>it's actually simple</h5>
-<br/>
 <h3>You can set proxy using `/etc/environment` file</h3>
 
 ```bash
