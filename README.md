@@ -7,7 +7,7 @@
 <h3>You can set proxy using `/etc/environment` file</h3>
 
 ```bash
-sudo python3 set_proxy.py
+sudo python3 set_vpn.py
 ```
 <h3>Next</h3>
 
@@ -19,5 +19,5 @@ source /etc/environment
 <h3>Or you can use `.zshrc` or `.bashrc` file</h3>
 
 ```bash
-sudo python3 set_proxy.sh
+sudo python3 set_vpn.sh
 ```
